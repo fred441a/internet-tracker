@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
 
-$servername = $_ENV["DBSERVERNAME"];
+$servername = $_ENV["IP"];
 $username = $_ENV["USERNAME"];
 $password = $_ENV["PASSWORD"];
 
@@ -28,7 +28,7 @@ function query($query, $conn)
 //Setup DB
 $sql = "CREATE DATABASE IF NOT EXISTS SpeedTests ";
 
-query($sql,$conn);
+query($sql, $conn);
 
 //Connect to DB
 $DBname = "SpeedTests";
@@ -42,10 +42,26 @@ upload FLOAT NOT NULL,
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
-query($sql,$conn);
+query($sql, $conn);
 
 $SpeedTest = json_decode(shell_exec("speedtest-cli --json"));
+
+if ($SpeedTest->download != null) {
+  $speedrespons->download = $SpeedTest->download;
+} else {
+  $speedrespons->download = 0;
+}
+
+if ($SpeedTest->upload != null) {
+  $speedrespons->upload = $SpeedTest->upload;
+} else {
+  $speedrespons->upload = 0;
+}
+
 $stmt = $conn->prepare("INSERT INTO SpeedTests (download, upload) VALUES (?, ?)");
-$stmt->bind_param("dd",$SpeedTest->download,$SpeedTest->upload);
+$stmt->bind_param("dd", $speedrespons->download, $speedrespons->upload);
 $stmt->execute();
-?>
+
+echo  json_encode($speedrespons);
+
+$conn->close();
