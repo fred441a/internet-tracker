@@ -11,6 +11,10 @@ make a link symlink to the folder your apache server is running from
 
 ```$ sudo ln -s /home/pi/internet-tacker /var/www/html/internet-tracker ```
 
+### other
+setup a LAMP server
+clone this repository into the folder apache is serving
+
 
 ## dependencies
  - mysql
