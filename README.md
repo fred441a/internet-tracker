@@ -1,3 +1,17 @@
+## setup
+
+### raspberry pi
+follow [this](https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server/) guide to setup a LAMP server on your raspberry pi
+clone the repository to your pi directory
+```
+$ cd /home/pi
+$ git clone https://github.com/fred441a/internet-tracker
+```
+make a link symlink to the folder your apache server is running from
+
+``` sudo ln -s /home/pi/internet-tacker /var/www/html/internet-tracker ```
+
+
 ## dependencies
  - mysql
  - php
