@@ -2,7 +2,10 @@
 
 ### raspberry pi
 if you have a raspberry pi 4 you can use this sdcard image i have made for my raspberry pi
+
 [Download](https://mega.nz/file/ahJhXY6R#cbc_UOvZmL6-UwzJy4G-QG-O64hVrVQ_88GAyv8wVlE)
+
+every password has been set to "password"
 
 follow [this](https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server/) guide to setup a LAMP server on your raspberry pi
 
