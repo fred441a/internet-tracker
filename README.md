@@ -2,8 +2,11 @@
 
 ### raspberry pi
 follow [this](https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server/) guide to setup a LAMP server on your raspberry pi
+
 install the speedtest cli dependency
+
 ```$ sudo apt install speedtest-cli ```
+
 clone the repository to your pi directory
 ```
 $ cd /home/pi
