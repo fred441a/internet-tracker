@@ -7,5 +7,5 @@
 
 ## add to cronjob
 replace ```path-to-internet-tracker``` with your path to internet tracker
-``` @hourly /bin/php path-to-internet-tracker/SpeedTest.php ```
+``` @hourly wget localhost/internet-tracker/SpeedTest.php ```
 you can add cronnjobs by running ``` contab -e```
