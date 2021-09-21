@@ -2,6 +2,8 @@
 
 ### raspberry pi
 follow [this](https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server/) guide to setup a LAMP server on your raspberry pi
+install the speedtest cli dependency
+```$ sudo apt install speedtest-cli ```
 clone the repository to your pi directory
 ```
 $ cd /home/pi
@@ -21,7 +23,7 @@ clone this repository into the folder apache is serving
  - php
  - speedtest-cli
  Can be installed on debian systems with:
- ``` sudo apt install speedtest-cli ```
+ ```$ sudo apt install speedtest-cli ```
 
 ## add to cronjob
 if you want the test to run every hour and you are running linux. You can run it as a cronjob.
