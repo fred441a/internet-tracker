@@ -2,6 +2,7 @@
  - mysql
  - php
  - speedtest-cli
+ - composer
  Can be installed on debian systems with:
  ``` sudo apt install speedtest-cli ```
 
@@ -16,3 +17,7 @@ add this repositories to you /var/www/html folder by running ´´´sudo ln -s /p
 or just add replace the html folder with this repo (remember to rename it html or change it in apache config)
 
 IT IS IMPORTANT THAT THE ROOT FOLDER OF THIS REPOSITORY IS THE ROOT FOLDER OF YOUR APACHE CONFIG.
+
+## composer install
+
+you need to run ´´´ composer install  ´´´ in the internet-tracker folder
