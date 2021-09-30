@@ -3,7 +3,7 @@
 ### raspberry pi
 if you have a raspberry pi 4 you can use this sdcard image i have made for my raspberry pi
 
-[Download](https://mega.nz/file/ahJhXY6R#cbc_UOvZmL6-UwzJy4G-QG-O64hVrVQ_88GAyv8wVlE)
+[Download](https://mega.nz/file/ToYCXRQK#THLr5GbHUUIymSw7CnuF413CxwbnEPw7MxyquXAB4pQ)
 
 every password has been set to "password"
 
